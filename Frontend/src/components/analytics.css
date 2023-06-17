@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.AnalysisBody {
+  display: flex;
+  flex-direction: row;
+}
+.TransactionsAnalysis {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 4vh;
+}
+.categoryAnalysis {
+  display: flex;
+  flex-direction: row;
+}
+.QuantitiyAnalysis {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-top: 5vh;
+  margin-left: 4vw;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+  margin-right: 4vw;
+  min-height: 70vh;
+}
+.TurnoverAnalysis {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-top: 5vh;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+  margin-right: 4vw;
+  min-height: 70vh;
+}
+.TotalTrn {
+  padding: 2vh 2vw;
+  background-color: rgb(236, 233, 233);
+  border-bottom: 1px solid grey;
+}
+.IncomeExpense {
+  padding: 2vh 2vw;
+  background-color: rgb(253, 249, 249);
+}
+.IncomeExpense p {
+  margin-bottom: 2vh;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.rd {
+  color: red;
+}
+.grn {
+  color: green;
+}
+.charts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Chart {
+  margin: 1vh 0vw;
+}
+.incomeCategory {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-top: 5vh;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+  margin-right: 4vw;
+  margin-bottom: 5vh;
+  min-height: 70vh;
+}
+.expenseCategory {
+  display: flex;
+  flex-direction: column;
+  width: 20vw;
+  margin-top: 5vh;
+  border: 1px solid grey;
+  border-radius: 0.3rem;
+  margin-bottom: 5vh;
+  min-height: 70vh;
+}
+.categoryTitle {
+  padding: 2vh 2vw;
+  background-color: rgb(236, 233, 233);
+  border-bottom: 1px solid grey;
+}
+.categoryTitle h5 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.CategoryCard {
+  margin-top: 2vh;
+  border-bottom: 1px solid grey;
+  padding: 0.2vh 1vw;
+}

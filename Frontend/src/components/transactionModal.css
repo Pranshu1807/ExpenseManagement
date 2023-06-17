@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.modal-wrapper {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.transactionForm {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 5px rgb(155, 153, 153);
+}
+.formTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2vh 1vw;
+  box-shadow: 0 0 3px rgb(155, 153, 153);
+}
+.closeIcon {
+  cursor: pointer;
+}
+.trn-form {
+  padding: 1.5vh 2vh;
+}
+.trn-form input {
+  margin: 1.2vh 0vw;
+  border: 1px solid #719ece;
+  border-radius: 4px;
+  padding: 0.5vh 0.5vw;
+  width: 35vw;
+  height: 3vh;
+}
+.trn-form select {
+  margin: 1.2vh 0vw;
+  border: 1px solid #719ece;
+  border-radius: 4px;
+  padding: 0.5vh 0.5vw;
+  width: 36vw;
+  height: 4.5vh;
+}
+.trn-form select:focus {
+  outline: none;
+}
+.trn-form input:focus {
+  outline: none;
+}
+.trn-form p {
+  margin-top: 3vh;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.SaveBtn {
+  height: 6vh;
+  width: 15vh;
+  color: white;
+  background: rgb(33, 33, 255);
+  border-radius: 1vh;
+  border: none;
+  margin: 1vh 0vw;
+  cursor: pointer;
+}
+.validation-error {
+  font-size: 0.9rem;
+  margin-top: 0rem;
+  color: red;
+}

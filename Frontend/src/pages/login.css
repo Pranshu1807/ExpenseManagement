@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Inter", sans-serif; */
+  font-family: "Roboto", sans-serif;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../bg3.png");
+  height: 92vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.LoginForm {
+  background-color: white;
+  max-height: 65vh;
+  width: 35vw;
+  padding: 2vh;
+  margin-top: 17vh;
+  border-radius: 3vh;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.LoginHeading {
+  font-size: 1.5rem;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.LoginForm p {
+  margin: 0.7vh 0vw;
+}
+.LoginForm input {
+  margin: 1.4vh 0vw;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 0.5vh 0.5vw;
+  width: 25vw;
+}
+.LgnBtn {
+  height: 6vh;
+  width: 15vh;
+  padding: 1.5vh 2vw;
+  color: white;
+  background: rgb(33, 33, 255);
+  border-radius: 1vh;
+  border: none;
+  margin: 2vh 0vw;
+  cursor: pointer;
+}
+.RegBtn {
+  height: 6vh;
+  width: 15vh;
+  padding: 1.5vh 2vw;
+  color: white;
+  background: rgb(33, 33, 255);
+  border-radius: 1vh;
+  border: none;
+  margin: 0vh 2vw;
+  cursor: pointer;
+}
+.LgnBtn:hover {
+  background: rgb(81, 164, 216);
+}
+.RegBtn:hover {
+  background: rgb(81, 164, 216);
+}
+.NotUser {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5vh 0vw;
+  color: blue;
+}
+.validation-error {
+  font-size: 0.9rem;
+  margin-top: 0rem;
+  color: red;
+}

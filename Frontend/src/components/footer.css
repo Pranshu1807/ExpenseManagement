@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+.footer {
+  background-color: rgba(0, 0, 0, 0.726);
+  height: 11vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgba(185, 183, 183, 0.993);
+}
