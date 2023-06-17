@@ -29,11 +29,14 @@ const Home = () => {
 
   const getAllTransactions = async () => {
     const res = await axios
-      .post("http://localhost:8080/transactions//get-transaction", {
-        userid: profile.user._id,
-        time,
-        type,
-      })
+      .post(
+        "https://expensee-tf9c.onrender.com/transactions//get-transaction",
+        {
+          userid: profile.user._id,
+          time,
+          type,
+        }
+      )
       .catch((e) => {
         alert("Failed to load Transactions");
         console.log(e.response);
@@ -63,9 +66,12 @@ const Home = () => {
 
   async function handleDelete(id) {
     const res = await axios
-      .post("http://localhost:8080/transactions/delete-transaction", {
-        transactionId: id,
-      })
+      .post(
+        "https://expensee-tf9c.onrender.com/transactions/delete-transaction",
+        {
+          transactionId: id,
+        }
+      )
       .catch((e) => {
         alert("Failed to Delete Transaction");
         console.log(e.response);

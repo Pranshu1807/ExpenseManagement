@@ -41,13 +41,16 @@ const TransactionModal = ({ closeModal, editable, setEditable }) => {
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         if (editable) {
           const res = await axios
-            .post("http://localhost:8080/transactions/edit-transaction", {
-              payload: {
-                ...formValues,
-                userid: profile.user._id,
-              },
-              transactionId: editable._id,
-            })
+            .post(
+              "https://expensee-tf9c.onrender.com/transactions/edit-transaction",
+              {
+                payload: {
+                  ...formValues,
+                  userid: profile.user._id,
+                },
+                transactionId: editable._id,
+              }
+            )
             .catch((e) => {
               alert("Failed to edit Transaction");
               console.log(e.response);
@@ -60,10 +63,13 @@ const TransactionModal = ({ closeModal, editable, setEditable }) => {
           }
         } else {
           const res = await axios
-            .post("http://localhost:8080/transactions/add-transaction", {
-              ...formValues,
-              userid: profile.user._id,
-            })
+            .post(
+              "https://expensee-tf9c.onrender.com/transactions/add-transaction",
+              {
+                ...formValues,
+                userid: profile.user._id,
+              }
+            )
             .catch((e) => {
               alert("Failed to add Transaction");
               console.log(e.response);

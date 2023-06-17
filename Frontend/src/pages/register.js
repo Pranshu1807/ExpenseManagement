@@ -41,7 +41,7 @@ const Register = () => {
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         const user = { name, email, password };
         const res = await axios
-          .post("http://localhost:8080/users/register", user)
+          .post("https://expensee-tf9c.onrender.com/users/register", user)
           .catch((err) => {
             if (err.response.data.code === 11000)
               return setFormErrors({

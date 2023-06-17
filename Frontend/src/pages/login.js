@@ -16,7 +16,7 @@ const Login = () => {
       if (Object.keys(formErrors).length === 0 && isSubmit) {
         const user = { email, password };
         const res = await axios
-          .post("http://localhost:8080/users/login", user)
+          .post("https://expensee-tf9c.onrender.com/users/login", user)
           .catch((err) => {
             setError(err.response.data.message);
             console.log(err);

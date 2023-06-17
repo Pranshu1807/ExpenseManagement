@@ -23,7 +23,6 @@ const Navbar = () => {
       }
     }
   }, [location]);
-  
 
   async function handleLogout(e) {
     // e.preventDefault();
